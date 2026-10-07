@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class CustomerModel extends Model
@@ -11,6 +13,8 @@ class CustomerModel extends Model
         'full_name',
         'email',
         'phone',
-        'created_at'
+        'created_at',
     ];
+
+    protected $useTimestamps = false;
 }

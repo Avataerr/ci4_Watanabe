@@ -12,6 +12,9 @@
         <a href="<?= base_url('/about') ?>">About</a> |
         <a href="<?= base_url('/customers') ?>">Customer Accounts</a> |
         <a href="<?= base_url('/users') ?>">User Accounts</a>
+        <br> <br>
+        <a href="<?= base_url('customers/new') ?>">Add Customer</a>
+        <a href="<?= base_url('users/new') ?>">Add User</a>
     </nav>
 
 
