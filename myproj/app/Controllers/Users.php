@@ -65,7 +65,7 @@ class Users extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
 
-        return view('user_form', [
+        return view('users/form', [
             'title' => 'Edit User',
             'user'  => $user,
         ]);

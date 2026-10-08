@@ -15,6 +15,7 @@
         <br> <br>
         <a href="<?= base_url('customers/new') ?>">Add Customer</a>
         <a href="<?= base_url('users/new') ?>">Add User</a>
+        <a href="<?= base_url('logout') ?>">Log Out</a>
     </nav>
 
 
@@ -27,6 +28,7 @@
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Phone</th>
+                <th>Action</th>
             </tr>
         </thead>
 
@@ -36,6 +38,7 @@
                     <td><?= esc($customer['full_name']) ?></td>
                     <td><?= esc($customer['email']) ?></td>
                     <td><?= esc($customer['phone']) ?></td>
+                    <td><a href="<?= base_url('customers/edit/' . $customer['id']) ?>">Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

@@ -60,7 +60,7 @@ class Customers extends BaseController
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
 
-        return view('customer_form', [
+        return view('customers/form', [
             'title'    => 'Edit Customer',
             'customer' => $customer,
         ]);
